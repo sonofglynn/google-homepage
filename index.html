@@ -2,7 +2,14 @@
     <head>
         <link rel="stylesheet" href="css/styles.css">
         <title>Google</title>
-        <link rel="icon" href="https://maxcdn.icons8.com/Share/icon/Logos/google_logo1600.png" type="image/x-icon">
+        <link re l="icon" href="https://maxcdn.icons8.com/Share/icon/Logos/google_logo1600.png" type="image/x-icon">
+        <script>
+            function onPressEnter(e) {
+                if (e.key === "Enter") {
+                    location.href = "/html/search-results.html";
+                }
+            }
+        </script>
     </head>
     <body>
         <header>
@@ -27,7 +34,7 @@
             <img id="logo" src="http://purepng.com/public/uploads/large/purepng.com-google-logo-2015brandlogobrand-logoiconssymbolslogosgoogle-6815229372333mqrr.png">
             <div id="search-bar">
                 <img id="search-icon" src="https://icon-library.com/images/google-search-magnifying-glass-icon/google-search-magnifying-glass-icon-5.jpg">  
-                <input id="search-input" type="text" id="searchitem" name="searchitem">
+                <input id="search-input" type="text" id="searchitem" name="searchitem" onkeyup="onPressEnter(event)">
                 <button id="microphone-button">
                     <img id="microphone-icon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/1200px-Google_mic.svg.png">
                 </button>
